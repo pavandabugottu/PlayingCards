@@ -7,10 +7,11 @@ namespace PlayingCards
         static void Main(string[] args)
         {
             var playingCardsDeck = new PlayingCardsDeck();
-            Console.WriteLine("Deck has 52 cards, enter any number to pull that many cards from the Deck");
+            Console.WriteLine("Deck has 52 cards, enter any number to pull that many cards from the Deck.");
             var numberOfCardsToPull = int.Parse(Console.ReadLine());
             playingCardsDeck.PickNRandomCards(numberOfCardsToPull);
-            Console.ReadLine();
+            Console.WriteLine("Press anywhere on the Keyboard to exit.");
+            Console.ReadLine();            
         }
     }
 }
